@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
-    <title>Pertemuan 2 HTML Dasar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 2 - HTML Dasar</title>
     <style>
-      /* Reset default styles */
       * {
         margin: 0;
         padding: 0;
@@ -19,30 +20,32 @@
       }
 
       header {
-        background: #333;
+        background: #007bff;
         color: #fff;
-        padding: 10px 20px;
+        padding: 15px;
         text-align: center;
+        font-size: 20px;
+        font-weight: bold;
       }
 
       header a {
         color: #fff;
         text-decoration: none;
-        font-size: 18px;
       }
 
       main, section {
         background: #fff;
         padding: 20px;
-        margin: 20px 0;
+        margin: 20px auto;
         border-radius: 8px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
+        max-width: 800px;
       }
 
       #form label {
         display: block;
         margin-top: 10px;
+        font-weight: bold;
       }
 
       #form input, #form select, #form button {
@@ -59,6 +62,9 @@
         color: #fff;
         border: none;
         cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 15px;
       }
 
       #form button:hover {
@@ -67,12 +73,13 @@
 
       #gambar img {
         display: block;
-        margin: 0 auto;
+        margin: 10px auto;
         border-radius: 10px;
       }
 
       h1, h2 {
         text-align: center;
+        color: #007bff;
       }
 
       p {
@@ -82,6 +89,7 @@
 
       ul, ol {
         margin-left: 20px;
+        padding-left: 20px;
       }
 
       ul li, ol li {
@@ -95,20 +103,20 @@
       }
 
       #table th, #table td {
-        padding: 10px;
+        padding: 12px;
         border: 1px solid #ccc;
         text-align: center;
       }
 
       #table th {
-        background: #333;
+        background: #007bff;
         color: #fff;
       }
 
       footer {
         text-align: center;
-        padding: 10px;
-        background: #333;
+        padding: 15px;
+        background: #007bff;
         color: #fff;
         margin-top: 20px;
       }
@@ -120,19 +128,17 @@
     </header>
     
     <main>
-      Hi
-      <br>
+      <h2>Selamat Datang</h2>
     </main>
     
-    <section>Halo world</section>
-
     <section id="form">
+      <h2>Formulir</h2>
       <form>
         <label>Username:</label>
-        <input type="text">
+        <input type="text" placeholder="Masukkan username">
         
         <label>Password:</label>
-        <input type="password">
+        <input type="password" placeholder="Masukkan password">
         
         <label>Warna:</label>
         <input type="color">
@@ -154,55 +160,54 @@
         </label>
 
         <label>Pencarian:</label>
-        <input type="search">
+        <input type="search" placeholder="Cari...">
 
-        <input type="submit" value="Cancel">
         <button>Login</button>
       </form>
     </section>
 
     <section id="gambar">
-      <img src="may.jpg" height="200" width="200">
+      <img src="may.jpg" height="200" width="200" alt="Gambar contoh">
     </section>
 
     <section id="paragraf">
       <h1>Pertemuan 2</h1>
       <h2>HTML Dasar</h2>
-      <p>Pertemuan dasar HTML membuat paragraf dengan sederhana <i>miring</i>, <b>tebal</b></p>
+      <p>Belajar dasar HTML dengan berbagai elemen seperti <i>miring</i> dan <b>tebal</b>.</p>
       
       <ul>
-        <li>1</li>
-        <li>2</li>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
       </ul>
       
       <ol>
-        <li>Satu</li>
-        <li>Dua</li>
+        <li>Item Satu</li>
+        <li>Item Dua</li>
       </ol>
     </section>
 
     <section id="table">
-      <h2>Table</h2>
-      <table border="1">
+      <h2>Tabel Data</h2>
+      <table>
         <thead>
           <tr>
-            <th>Jan</th>
-            <th>Feb</th>
+            <th>Januari</th>
+            <th>Februari</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td>2</td>
+            <td>100</td>
+            <td>200</td>
           </tr>
           <tr>
-            <td>3</td>
-            <td>4</td>
+            <td>300</td>
+            <td>400</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <footer>@2025</footer>
+    <footer>&copy; 2025 - Semua Hak Dilindungi</footer>
   </body>
 </html>
