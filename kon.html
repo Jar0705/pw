@@ -1,229 +1,99 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 2 - HTML Dasar</title>
+    <title>Tabel Data</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-      }
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      body {
-        background: linear-gradient(135deg, #74ebd5, #acb6e5);
-        color: #333;
-        line-height: 1.6;
-        padding: 20px;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
 
-      header {
-        background: #007bff;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-      header a {
-        color: #fff;
-        text-decoration: none;
-      }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
 
-      main, section {
-        background: rgba(255, 255, 255, 0.9);
-        padding: 20px;
-        margin: 20px auto;
-        border-radius: 12px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-        max-width: 800px;
-        transition: transform 0.3s;
-      }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
 
-      main:hover, section:hover {
-        transform: scale(1.02);
-      }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
 
-      #form label {
-        display: block;
-        margin-top: 10px;
-        font-weight: bold;
-      }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
 
-      #form input, #form select, #form button {
-        display: block;
-        width: 100%;
-        padding: 12px;
-        margin-top: 5px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-      }
+        /* Responsif */
+        @media (max-width: 600px) {
+            table {
+                font-size: 14px;
+            }
 
-      #form button {
-        background: #28a745;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: bold;
-        margin-top: 15px;
-        transition: background 0.3s;
-      }
+            th, td {
+                padding: 8px;
+            }
 
-      #form button:hover {
-        background: #218838;
-      }
-
-      #gambar img {
-        display: block;
-        margin: 10px auto;
-        border-radius: 12px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      h1, h2 {
-        text-align: center;
-        color: #007bff;
-        margin-bottom: 15px;
-      }
-
-      p {
-        text-align: justify;
-        margin-bottom: 10px;
-      }
-
-      ul, ol {
-        margin-left: 20px;
-        padding-left: 20px;
-      }
-
-      ul li, ol li {
-        margin-bottom: 5px;
-      }
-
-      #table table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        background: white;
-        border-radius: 8px;
-        overflow: hidden;
-      }
-
-      #table th, #table td {
-        padding: 15px;
-        border: 1px solid #ccc;
-        text-align: center;
-      }
-
-      #table th {
-        background: #007bff;
-        color: #fff;
-      }
-
-      footer {
-        text-align: center;
-        padding: 15px;
-        background: #007bff;
-        color: #fff;
-        margin-top: 20px;
-        font-size: 16px;
-        font-weight: bold;
-        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-      }
+            section {
+                padding: 15px;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <header>
-      <a href="https://ipwija.ac.id">Home</a>
-    </header>
-    
-    <main>
-      <h2>Selamat Datang</h2>
-    </main>
-    
-    <section id="form">
-      <h2>Formulir</h2>
-      <form>
-        <label>Username:</label>
-        <input type="text" placeholder="Masukkan username">
-        
-        <label>Password:</label>
-        <input type="password" placeholder="Masukkan password">
-        
-        <label>Warna:</label>
-        <input type="color">
-        
-        <label>Dropdown:</label>
-        <select>
-          <option>1</option>
-          <option>2</option>
-        </select>
+</head>
+<body>
 
-        <label>Tanggal:</label>
-        <input type="date">
-
-        <label>Upload File:</label>
-        <input type="file">
-
-        <label>
-          <input type="checkbox"> Saya setuju
-        </label>
-
-        <label>Pencarian:</label>
-        <input type="search" placeholder="Cari...">
-
-        <button>Login</button>
-      </form>
-    </section>
-
-    <section id="gambar">
-      <img src="may.jpg" height="200" width="200" alt="Gambar contoh">
-    </section>
-
-    <section id="paragraf">
-      <h1>Pertemuan 2</h1>
-      <h2>HTML Dasar</h2>
-      <p>Belajar dasar HTML dengan berbagai elemen seperti <i>miring</i> dan <b>tebal</b>.</p>
-      
-      <ul>
-        <li>List Item 1</li>
-        <li>List Item 2</li>
-      </ul>
-      
-      <ol>
-        <li>Item Satu</li>
-        <li>Item Dua</li>
-      </ol>
-    </section>
-
-    <section id="table">
-      <h2>Tabel Data</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Januari</th>
-            <th>Februari</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>100</td>
-            <td>200</td>
-          </tr>
-          <tr>
-            <td>300</td>
-            <td>400</td>
-          </tr>
-        </tbody>
-      </table>
+    <section>
+        <h2>Data Bulanan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Januari</th>
+                    <th>Februari</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>300</td>
+                    <td>400</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <footer>&copy; 2025 - Semua Hak Dilindungi</footer>
-  </body>
+
+</body>
 </html>
