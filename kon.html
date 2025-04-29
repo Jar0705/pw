@@ -1,99 +1,47 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel Data</title>
-    <style>
-        /* Reset dasar */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #007BFF;
-            color: white;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background: #007BFF;
-            color: white;
-            border-radius: 5px;
-        }
-
-        /* Responsif */
-        @media (max-width: 600px) {
-            table {
-                font-size: 14px;
-            }
-
-            th, td {
-                padding: 8px;
-            }
-
-            section {
-                padding: 15px;
-            }
-        }
-    </style>
+    <title>HTML Dasar</title>
 </head>
 <body>
 
-    <section>
-        <h2>Data Bulanan</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Januari</th>
-                    <th>Februari</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>100</td>
-                    <td>200</td>
-                </tr>
-                <tr>
-                    <td>300</td>
-                    <td>400</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <a href="#">Home</a><br>
+    Hi<br>
+    Halo world<br><br>
 
-    <footer>&copy; 2025 - Semua Hak Dilindungi</footer>
+    <!-- Form Login dan Input -->
+    <form>
+        Username: <input type="text" name="username">
+        Password: <input type="password" name="password">
+        Warna: <input type="color" name="warna">
+        Dropdown: 
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        Tanggal: <input type="date" name="tanggal">
+        Upload File: <input type="file" name="file"><br>
+        Saya setuju Pencarian: 
+        <input type="checkbox" name="setuju">
+        <input type="submit" value="Login">
+        <input type="reset" value="Cancel">
+    </form>
+
+    <br>
+
+    <!-- Gambar -->
+    <img src="https://via.placeholder.com/150" alt="Foto" width="150" height="200"><br><br>
+
+    <!-- Judul dan Isi -->
+    <h2>Pertemuan 2</h2>
+    <h3>HTML Dasar</h3>
+    <p>Pertemuan dasar HTML membuat paragraf dengan sederhana <i>miring</i>, <b>tebal</b></p>
+    
+    <!-- List -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
 
 </body>
 </html>
