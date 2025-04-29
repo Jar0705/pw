@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Interaksi Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #colorBox {
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: lightgray;
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #2196F3;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ubah Warna Latar</h2>
+
+    <div id="colorBox"></div>
+
+    <button onclick="ubahWarna('red')">Merah</button>
+    <button onclick="ubahWarna('green')">Hijau</button>
+    <button onclick="ubahWarna('blue')">Biru</button>
+    <button onclick="ubahWarna('white')">Putih</button>
+
+    <script>
+        function ubahWarna(warna) {
+            document.getElementById("colorBox").style.backgroundColor = warna;
+        }
+    </script>
+
+</body>
+</html>
